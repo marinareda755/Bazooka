@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/menu"
+        android:iconTint="#FFEB3B"
+        android:enabled="true"
+        android:title="Menu"
+        />
+    <item
+        android:id="@+id/cardFragment"
+        android:icon="@drawable/cart2"
+        android:iconTint="#FFEB3B"
+        android:enabled="true"
+        android:title="Card"
+        />
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:iconTint="#FFEB3B"
+        android:enabled="true"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
+        android:iconTint="#FFEB3B"
+        android:enabled="true"
+        android:title="Profile"
+        />
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/setting"
+        android:iconTint="#FFEB3B"
+        android:enabled="true"
+        android:title="Setting"
+        />
+
+
+
+</menu>
