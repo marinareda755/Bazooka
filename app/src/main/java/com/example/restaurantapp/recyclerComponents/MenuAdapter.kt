@@ -11,11 +11,11 @@ import com.example.restaurantapp.data.MenuItem
 
 class MenuAdapter (var list:ArrayList<MenuItem>): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
     class ViewHolder (itemView: View):RecyclerView.ViewHolder(itemView) {
-//        val image:ImageView=itemView.findViewById(R.id.)
+//        val image:ImageView=itemView.findViewById(R.id.img_menu)
 //        val name:TextView=itemView.findViewById(R.id.)
 //        val des:TextView=itemView.findViewById(R.id)
 //        val price:TextView=itemView.findViewById(R.id)
-//
+
 
 
 
