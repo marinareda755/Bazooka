@@ -7,14 +7,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurantapp.R
-import com.example.restaurantapp.data.MenuItem
+import com.example.restaurantapp.data.MenuResponse
+import com.squareup.picasso.Picasso
 
-class MenuAdapter (var list:ArrayList<MenuItem>): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+class MenuAdapter (var list:ArrayList<MenuResponse>): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
     class ViewHolder (itemView: View):RecyclerView.ViewHolder(itemView) {
-//        val image:ImageView=itemView.findViewById(R.id.img_menu)
-//        val name:TextView=itemView.findViewById(R.id.)
-//        val des:TextView=itemView.findViewById(R.id)
-//        val price:TextView=itemView.findViewById(R.id)
+       val image:ImageView=itemView.findViewById(R.id.img_menu)
+       val title:TextView=itemView.findViewById(R.id.tv_menu_title)
+        val difficulty:TextView=itemView.findViewById(R.id.tv_menu_Difficulty)
+
+
 
 
 
@@ -28,7 +30,12 @@ class MenuAdapter (var list:ArrayList<MenuItem>): RecyclerView.Adapter<MenuAdapt
     }
 
     override fun onBindViewHolder(holder: MenuAdapter.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        Picasso.with(holder.itemView.context).load(list!![position].image).placeholder(R.drawable.load).into(holder.image)
+        holder.title.text=list[position].title
+        holder.difficulty.text=list[position].difficulty
+
+
+
     }
 
     override fun getItemCount(): Int {

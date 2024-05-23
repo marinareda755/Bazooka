@@ -48,25 +48,26 @@
             android:layout_marginEnd="20dp"
             >
             <TextView
-                android:id="@+id/tv1_menu"
+                android:id="@+id/tv_menu_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="name"
+                android:text="title"
                 android:textColor="#FFEB3B"
                 android:textSize="25dp"
                 />
+<!--            <TextView-->
+<!--                android:id="@+id/tv2_menu"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="description"-->
+<!--                />-->
             <TextView
-                android:id="@+id/tv2_menu"
+                android:id="@+id/tv_menu_Difficulty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="description"
-                />
-            <TextView
-                android:id="@+id/tv3_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="price"
+                android:text="difficulty"
                 android:textSize="25dp"
+                android:textColor="@color/white"
 
                 />
 
